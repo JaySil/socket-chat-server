@@ -6,6 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../Public/index.html'));
+  console.log(__dirname, '../Public/index.html');
 });
 
 users = [];
